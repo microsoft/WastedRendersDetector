@@ -1,0 +1,28 @@
+{
+  "name": "wastedrendersdetector",
+  "version": "1.0.0",
+  "description": "Tool to debug wasted renders",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepare": "yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Microsoft/WastedRendersDetector.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Microsoft/WastedRendersDetector/issues"
+  },
+  "homepage": "https://github.com/Microsoft/WastedRendersDetector#readme",
+  "dependencies": {
+    "react": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@types/react": ">=16.0.0",
+    "typescript": "^3.3.1"
+  }
+}
