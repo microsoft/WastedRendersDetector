@@ -1,4 +1,19 @@
 
+# [WastedRendersDetector](https://github.com/Microsoft/WastedRendersDetector)
+
+Small tool aiming to ease the debugging of wasted react renders.
+Wasted react renders is when a react component updates but this does not result in actual DOM mutations.
+This is a common problem when using connect().
+
+# Usage
+
+```ts
+import { debugOnlyWastedRenderDetector } from "wastedrendersdetector";
+import { connect } from "react-redux";
+
+const MyConnectedComponent = connect(mapStateToProps)(debugOnlyWastedRenderDetector(MyBaseComponent));
+```
+
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
