@@ -2,8 +2,14 @@
 # [WastedRendersDetector](https://github.com/Microsoft/WastedRendersDetector)
 
 Small tool aiming to ease the debugging of wasted react renders.
+
 Wasted react renders is when a react component updates but this does not result in actual DOM mutations.
 This is a common problem when using connect().
+
+This tool should be used in debug builds only.
+It helps detecting the two following scenarios:
+- a component updates because some props changed but the old props and the new props are deep equal.
+- a component updates because some function props mutated, this happens if we create lambdas in render() or mapStateToProps.
 
 # Usage
 
