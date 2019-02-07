@@ -1,6 +1,6 @@
 {
   "name": "wastedrendersdetector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tool to debug wasted renders",
   "main": "lib/index.js",
   "scripts": {
@@ -18,11 +18,12 @@
     "url": "https://github.com/Microsoft/WastedRendersDetector/issues"
   },
   "homepage": "https://github.com/Microsoft/WastedRendersDetector#readme",
-  "dependencies": {
+  "peerDependencies": {
     "react": ">=16.0.0"
   },
   "devDependencies": {
     "@types/react": ">=16.0.0",
+    "react": ">=16.0.0",
     "typescript": "^3.3.1"
   }
 }
