@@ -18,9 +18,9 @@ class WarningComponent extends React.Component<any> {
         const differences = deepSubstract(prevProps, this.props);
 
         if (differences === null) {
-            console.error("🚨 WASTED RENDER 🚨, props changing reference for nothing: ", shallowSubstract(prevProps, this.props));
+            console.warn("🚨 WASTED RENDER 🚨, props changing reference for nothing: ", shallowSubstract(prevProps, this.props));
         } else if (isOnlyFunctions(differences)) {
-            console.error("🚨 WASTED RENDER 🚨, props changed because of function reference(s) changing: ", differences);
+            console.warn("🚨 WASTED RENDER 🚨, props changed because of function reference(s) changing: ", differences);
         }
     }
 }
